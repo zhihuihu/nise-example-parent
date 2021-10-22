@@ -1,0 +1,14 @@
+server:
+  port: 8080
+nise:
+  swagger:
+    enabled: true
+    apiBasePackage: "com.github.nise.example"
+    title: "nise-project"
+    description: "nise project 接口文档工程"
+    contact:
+      username: huzhihui
+      website: www.baidu.com
+      email: huzhihui_c@qq.com
+    version: 1.0.0
+
