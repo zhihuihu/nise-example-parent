@@ -17,4 +17,12 @@
 	</modules>
 	<packaging>pom</packaging>
 
+	<repositories>
+		<repository>
+			<id>nise-snapshots</id>
+			<name>nise-snapshots</name>
+			<url>http://nexus.cros.otoc.cn/content/repositories/snapshots/</url>
+		</repository>
+	</repositories>
+
 </project>
