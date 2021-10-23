@@ -5,6 +5,7 @@
 package com.github.nise.example.controller;
 
 import com.github.nise.example.dto.res.ServerRes;
+import com.github.nise.i18n.I18nUtils;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,6 +23,7 @@ public class IndexController {
     @ApiOperation(value = "欢迎页接口")
     @RequestMapping(value = {"","/"},method = RequestMethod.GET)
     public String welcome(){
+        System.out.println(I18nUtils.message("server_name_not_empty"));
         return "<h1 style='text-align:center'>welcome page!</h1>";
     }
 
