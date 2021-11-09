@@ -11,4 +11,27 @@ nise:
       website: www.baidu.com
       email: huzhihui_c@qq.com
     version: 1.0.0
+  mybatis-plus:
+    enabled: true
+    single-schema:
+      enabled: true
+      path: sql/schema.sql
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  datasource:
+    url: jdbc:mysql://192.168.159.128:3306/nise?useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true
+    username: nise
+    password: nise
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      minimum-idle: 5
+      maximum-pool-size: 15
+      auto-commit: true
+      idle-timeout: 30000
+      pool-name: DatebookHikariCP
+      max-lifetime: 1800000
+      connection-timeout: 30000
+      connection-test-query: SELECT 1
 
